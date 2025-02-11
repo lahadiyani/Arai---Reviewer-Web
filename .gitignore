@@ -1,3 +1,4 @@
 app/__pycache__
 backup
 data/data.json
+test.py
