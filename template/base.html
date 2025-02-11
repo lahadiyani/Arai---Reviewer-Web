@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style_base.css')}}">
+    <link rel="shortcut icon" href="{{url_for('static', filename='assets/image/logo.png')}}" type="image/x-icon">
+    <script type="text/javascript" src="{{url_for('static', filename='js/back.js')}}" defer></script>
+    <title>ARAI - Aplikasi Review AI</title>
+</head>
+<body>
+    <div class="container-box">
+        <div class="card-body">
+            <div class="image-logo-box">
+                <img src="{{url_for('static', filename='assets/image/logo.png')}}" alt="Rawr-ai-logo" class="image-logo">
+                <span class="text-logo">ARAI</span>
+            </div>
+            <form>
+                <div class="input-box">
+                    <input type="url" placeholder="Enter URL" id="url-input" required>
+                </div>
+                <div class="send-button-container">
+                    <button class="send-button" id="rate">Rate</button>
+                </div>
+            </form>
+            <div class="dark-mode-button" id="switcher">
+                <ion-icon class="mode-option-sun" name="sunny" style="display: block;"></ion-icon>
+                <ion-icon class="mode-option-moon" name="moon-outline" style="display: none;"></ion-icon>
+            </div>
+            <div class="info-ai-box" id="info-ai">
+                <h3 class="ai-name">ARAI - Aplikasi Review AI</h3>
+                <p class="text-info">
+                    <strong>ARAI</strong> (Aplikasi Review AI) adalah platform yang memanfaatkan kecerdasan buatan untuk menyaring dan menganalisis ulasan aplikasi dari pengguna, memberikan gambaran yang lebih akurat mengenai kualitas dan performa aplikasi mobile. 
+                    Dengan fitur analisis cerdas, ARAI menyajikan data review dalam bentuk yang mudah dipahami, termasuk rating, kelebihan, dan kekurangan aplikasi. 
+                    Platform ini memungkinkan pengguna untuk analisis sentimen dari aplikasi tertentu, dengan menyediakan informasi yang objektif dan terkini, serta tampilan interaktif yang ramah pengguna. 
+                    ARAI hadir untuk membantu Anda dalam melakukan analisa terbaik dengan lebih efisien dan tanpa bias.
+                </p>
+            </div>
+            <div class="results-box load fade" id="results-box">
+                <!-- dibuat secara dinamis -->
+            </div>
+            <div class="copyright-container">
+                <p class="copyright-text">Copyrighted By <a class="copyright-link" href="https://web.facebook.com/profile.php?id=100083052655883"  target="_blank" rel="noopener noreferrer">Pastiad-ITBM-Wakatobi</a> @2024 Alright Reserved</p>
+            </div>
+        </div>
+    </div>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
